@@ -47,6 +47,7 @@ export default function Artwork() {
           <div className={styles.artInfo}>
             <div>
               <h1>{nft.metadata.name}</h1>
+              <p>{nft.metadata.description}</p>
               {address && email && tokenId ? (
                 !paymentSuccesful ? (
                   <div>

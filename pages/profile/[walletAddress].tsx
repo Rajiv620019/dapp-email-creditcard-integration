@@ -41,6 +41,7 @@ export default function Profile() {
                 <ThirdwebNftMedia metadata={nft.metadata} />
                 <div className={styles.cardContent}>
                   <h3>{nft.metadata.name}</h3>
+                  <p>{nft.metadata.description}</p>
                   <p>QTY: {nft.quantityOwned}</p>
                 </div>
               </div>
