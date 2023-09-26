@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ThirdwebProvider, paperWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
+import Nav from "../components/Nav";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         paperWallet({ paperClientId: "7f64b340-af21-45f1-997d-57571e332995" }),
       ]}
     >
+      <Nav />
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
